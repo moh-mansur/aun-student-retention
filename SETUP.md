@@ -51,7 +51,7 @@ aun-student-retention/
 ├── AUN_DSS_DASHBOARD.ipynb      # Flask dashboard
 ├── new_synthetic_aun_students.csv   # Generated data (after ML run)
 ├── best_rf_model.pkl            # Trained model (after ML run)
-└── AUN_SRO.owl                  # Ontology file (provided separately)
+└── AUN_SRO.owl                  # Ontology file 
 ```
 
 ## Troubleshooting
@@ -76,4 +76,4 @@ aun-student-retention/
 
 ## Support
 
-For issues or questions, please open an issue on GitHub or contact the research team.
+For issues or questions, please open an issue on GitHub or contact the researcher.
