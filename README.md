@@ -2,22 +2,22 @@
 
 An ontology-driven decision support framework integrating semantic web technologies with machine learning for proactive, explainable student attrition prediction at the American University of Nigeria (AUN).
 
-## 📋 Overview
+##  Overview
 
-This repository contains the implementation of a hybrid symbolic-statistical AI system that addresses student retention challenges in Sub-Saharan African universities. The system combines:
+This repository contains the implementation of a system that addresses student retention challenges in Sub-Saharan African universities. The system combines:
 
 - **Ontology-based reasoning** for transparent, policy-grounded risk assessment
 - **Machine Learning** for detecting subtle multivariate risk patterns
 - **Interactive Dashboard** for advisor-facing decision support
 
-## 🎯 Key Features
+##  Key Features
 
 - **Explainable AI**: Policy-grounded explanations through SWRL rules
 - **Proactive Intervention**: Early identification of at-risk students
 - **Multi-domain Integration**: Academic, financial, engagement, and residential factors
 - **Stakeholder-validated**: Rules refined through consultation with Finance and Academic Advising departments
 
-## 📁 Repository Contents
+## Repository Contents
 
 ### 1. `StudentATT_ML.ipynb`
 **Machine Learning & Synthetic Data Generation**
@@ -54,7 +54,7 @@ This notebook implements:
 - Joblib for ML model loading
 - Responsive HTML/CSS interface
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -81,7 +81,7 @@ pip install owlready2 flask joblib scikit-learn pandas numpy
 4. The Flask server will start and display a URL
 5. Access the dashboard through the provided URL
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```
 ┌─────────────────┐
@@ -116,13 +116,13 @@ pip install owlready2 flask joblib scikit-learn pandas numpy
         └─────────┘
 ```
 
-## 📊 Ontology Structure
+##  Ontology Structure
 
 The AUN-SRO formalizes seven knowledge domains:
 
 1. **Academic Domain**: GPA, enrollment status, academic standing
 2. **Financial Domain**: Outstanding balances, payment plans, financial aid
-3. **Engagement Domain**: LMS logins, course participation
+3. **Engagement Domain**: LMS logins, 
 4. **Residential Domain**: Housing incidents, conduct records
 5. **Advisory Domain**: Advising sessions, intervention tracking
 6. **Risk Assessment Domain**: Risk levels, early warning indicators
@@ -148,7 +148,7 @@ Student(?s) ∧ hasGPA(?s, ?g) ∧ swrlb:lessThan(?g, 2.0)
 → requiresParentNotification(?s, true) ∧ requiresMandatoryAdvising(?s, true)
 ```
 
-## 🎓 Research Contribution
+##  Research Contribution
 
 This work contributes:
 
@@ -163,7 +163,7 @@ If you use this work in your research, please cite:
 
 ```bibtex
 @thesis{aun_sro_2026,
-  author = {[Your Name]},
+  author = {[Muhammad Idris Mansur ]},
   title = {Ontology-Driven Decision Support for Student Retention: 
            A Case Study at the American University of Nigeria},
   school = {American University of Nigeria},
@@ -172,26 +172,26 @@ If you use this work in your research, please cite:
 }
 ```
 
-## 🔒 Data Privacy
+##  Data Privacy
 
 All synthetic data used in this repository is artificially generated and does not contain real student information. The system is designed with privacy-preserving principles for deployment in production environments.
 
-## 🤝 Acknowledgments
+##  Acknowledgments
 
 - Finance Department, AUN (Policy consultation - February 2026)
 - Academic Advising Department, AUN (Policy validation)
 - Research supervisors and advisors
 
-## 📝 License
+##  License
 
-[Specify your license here - e.g., MIT, Apache 2.0, or Academic Use Only]
+[Academic Use Only]
 
-## 📧 Contact
+##  Contact
 
-[Your Name]  
-[Your Email]  
+[Muhammad Mansur]  
+[muhdmansur1.mm@gmail.com]  
 American University of Nigeria
 
 ---
 
-**Note**: This system requires the `AUN_SRO.owl` ontology file which contains institutional policies. For access, please contact the research team.
+
