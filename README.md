@@ -157,13 +157,13 @@ This work contributes:
 3. **Stakeholder-driven ontology engineering** methodology for educational contexts
 4. **Modular architecture** enabling institutional adaptation
 
-## 📖 Citation
+##  Citation
 
 If you use this work in your research, please cite:
 
 ```bibtex
 @thesis{aun_sro_2026,
-  author = {[Muhammad Idris Mansur ]},
+  author = {[Muhammad Mansur ]},
   title = {Ontology-Driven Decision Support for Student Retention: 
            A Case Study at the American University of Nigeria},
   school = {American University of Nigeria},
@@ -184,7 +184,7 @@ All synthetic data used in this repository is artificially generated and does no
 
 ##  License
 
-[Academic Use Only]
+[Research/Academic Use Only]
 
 ##  Contact
 
