@@ -1,0 +1,1229 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/muhdm/ontologies/2025/AUN_SRO"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/muhdm/ontologies/2025/AUN_SRO"
+     versionIRI="http://www.aun.edu.ng/ontology/AUN-SRO">
+    <Prefix name="" IRI="http://www.semanticweb.org/muhdm/ontologies/2025/AUN_SRO/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AcademicPerformance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdvisoryInteraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Engagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FinancialStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LMSEngagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalAttendance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResidentialLife"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiskLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAcademicPerformance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAdvisoryInteraction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEngagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFinancialStatus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLMSEngagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPhysicalAttendance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasResidentialLife"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#currentGPA"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMissedClasses"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRiskLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#incidentCount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#loginsThisSemester"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mlRiskScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#onSAPProbation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#outstandingBalance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#recommendedAction"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sessionsAttended"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#A00080012"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#A00080013"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#A00080014"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AcademicPerf_001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AcademicPerf_002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AcademicPerf_003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Advisory_001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Advisory_002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Advisory_003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Attend_001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Attend_002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Attend_003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Engagement_001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Engagement_002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Engagement_003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Financial_001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Financial_002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Financial_003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LMS_001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LMS_003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ResLife_001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ResLife_002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ResLife_003"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#LMSEngagement"/>
+        <Class IRI="#Engagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalAttendance"/>
+        <Class IRI="#Engagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiskLevel"/>
+        <Class IRI="#ResidentialLife"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#A00080012"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#A00080013"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#A00080014"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AcademicPerformance"/>
+        <NamedIndividual IRI="#AcademicPerf_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AcademicPerformance"/>
+        <NamedIndividual IRI="#AcademicPerf_002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AcademicPerformance"/>
+        <NamedIndividual IRI="#AcademicPerf_003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdvisoryInteraction"/>
+        <NamedIndividual IRI="#Advisory_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdvisoryInteraction"/>
+        <NamedIndividual IRI="#Advisory_002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdvisoryInteraction"/>
+        <NamedIndividual IRI="#Advisory_003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Engagement"/>
+        <NamedIndividual IRI="#Attend_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PhysicalAttendance"/>
+        <NamedIndividual IRI="#Attend_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Engagement"/>
+        <NamedIndividual IRI="#Attend_002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PhysicalAttendance"/>
+        <NamedIndividual IRI="#Attend_002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Engagement"/>
+        <NamedIndividual IRI="#Attend_003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PhysicalAttendance"/>
+        <NamedIndividual IRI="#Attend_003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Engagement"/>
+        <NamedIndividual IRI="#Engagement_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Engagement"/>
+        <NamedIndividual IRI="#Engagement_002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Engagement"/>
+        <NamedIndividual IRI="#Engagement_003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FinancialStatus"/>
+        <NamedIndividual IRI="#Financial_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FinancialStatus"/>
+        <NamedIndividual IRI="#Financial_002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FinancialStatus"/>
+        <NamedIndividual IRI="#Financial_003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Engagement"/>
+        <NamedIndividual IRI="#LMS_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LMSEngagement"/>
+        <NamedIndividual IRI="#LMS_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Engagement"/>
+        <NamedIndividual IRI="#LMS_003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LMSEngagement"/>
+        <NamedIndividual IRI="#LMS_003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ResidentialLife"/>
+        <NamedIndividual IRI="#ResLife_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ResidentialLife"/>
+        <NamedIndividual IRI="#ResLife_002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ResidentialLife"/>
+        <NamedIndividual IRI="#ResLife_003"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAcademicPerformance"/>
+        <NamedIndividual IRI="#A00080012"/>
+        <NamedIndividual IRI="#AcademicPerf_001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAdvisoryInteraction"/>
+        <NamedIndividual IRI="#A00080012"/>
+        <NamedIndividual IRI="#Advisory_001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEngagement"/>
+        <NamedIndividual IRI="#A00080012"/>
+        <NamedIndividual IRI="#Engagement_001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFinancialStatus"/>
+        <NamedIndividual IRI="#A00080012"/>
+        <NamedIndividual IRI="#Financial_001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResidentialLife"/>
+        <NamedIndividual IRI="#A00080012"/>
+        <NamedIndividual IRI="#ResLife_001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAcademicPerformance"/>
+        <NamedIndividual IRI="#A00080013"/>
+        <NamedIndividual IRI="#AcademicPerf_002"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAdvisoryInteraction"/>
+        <NamedIndividual IRI="#A00080013"/>
+        <NamedIndividual IRI="#Advisory_002"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEngagement"/>
+        <NamedIndividual IRI="#A00080013"/>
+        <NamedIndividual IRI="#Engagement_002"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFinancialStatus"/>
+        <NamedIndividual IRI="#A00080013"/>
+        <NamedIndividual IRI="#Financial_002"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResidentialLife"/>
+        <NamedIndividual IRI="#A00080013"/>
+        <NamedIndividual IRI="#ResLife_002"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAcademicPerformance"/>
+        <NamedIndividual IRI="#A00080014"/>
+        <NamedIndividual IRI="#AcademicPerf_003"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAdvisoryInteraction"/>
+        <NamedIndividual IRI="#A00080014"/>
+        <NamedIndividual IRI="#Advisory_003"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEngagement"/>
+        <NamedIndividual IRI="#A00080014"/>
+        <NamedIndividual IRI="#Engagement_003"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFinancialStatus"/>
+        <NamedIndividual IRI="#A00080014"/>
+        <NamedIndividual IRI="#Financial_003"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResidentialLife"/>
+        <NamedIndividual IRI="#A00080014"/>
+        <NamedIndividual IRI="#ResLife_003"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLMSEngagement"/>
+        <NamedIndividual IRI="#Engagement_001"/>
+        <NamedIndividual IRI="#LMS_001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPhysicalAttendance"/>
+        <NamedIndividual IRI="#Engagement_001"/>
+        <NamedIndividual IRI="#Attend_001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPhysicalAttendance"/>
+        <NamedIndividual IRI="#Engagement_002"/>
+        <NamedIndividual IRI="#Attend_002"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLMSEngagement"/>
+        <NamedIndividual IRI="#Engagement_003"/>
+        <NamedIndividual IRI="#LMS_003"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPhysicalAttendance"/>
+        <NamedIndividual IRI="#Engagement_003"/>
+        <NamedIndividual IRI="#Attend_003"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRiskLevel"/>
+        <NamedIndividual IRI="#A00080012"/>
+        <Literal>High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRiskLevel"/>
+        <NamedIndividual IRI="#A00080012"/>
+        <Literal>Medium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mlRiskScore"/>
+        <NamedIndividual IRI="#A00080012"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#recommendedAction"/>
+        <NamedIndividual IRI="#A00080012"/>
+        <Literal>Encourage better class attendance – high number of missed classes detected</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#recommendedAction"/>
+        <NamedIndividual IRI="#A00080012"/>
+        <Literal>ML model flags high risk – review all factors</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#recommendedAction"/>
+        <NamedIndividual IRI="#A00080012"/>
+        <Literal>Residential life check-in suggested</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#recommendedAction"/>
+        <NamedIndividual IRI="#A00080012"/>
+        <Literal>Review payment plan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#recommendedAction"/>
+        <NamedIndividual IRI="#A00080012"/>
+        <Literal>Schedule advising session if risk is high or medium if low not necessary</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#recommendedAction"/>
+        <NamedIndividual IRI="#A00080012"/>
+        <Literal>Suggest increasing Canvas/LMS usage to improve engagement</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#recommendedAction"/>
+        <NamedIndividual IRI="#A00080012"/>
+        <Literal>Urgent SAP review and academic advising</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRiskLevel"/>
+        <NamedIndividual IRI="#A00080013"/>
+        <Literal>Medium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mlRiskScore"/>
+        <NamedIndividual IRI="#A00080013"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#recommendedAction"/>
+        <NamedIndividual IRI="#A00080013"/>
+        <Literal>Academic monitoring recommended</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#recommendedAction"/>
+        <NamedIndividual IRI="#A00080013"/>
+        <Literal>Residential life check-in suggested</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#recommendedAction"/>
+        <NamedIndividual IRI="#A00080013"/>
+        <Literal>Review payment plan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#recommendedAction"/>
+        <NamedIndividual IRI="#A00080013"/>
+        <Literal>Schedule advising session if risk is high or medium if low not necessary</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mlRiskScore"/>
+        <NamedIndividual IRI="#A00080014"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#currentGPA"/>
+        <NamedIndividual IRI="#AcademicPerf_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#onSAPProbation"/>
+        <NamedIndividual IRI="#AcademicPerf_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#currentGPA"/>
+        <NamedIndividual IRI="#AcademicPerf_002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#onSAPProbation"/>
+        <NamedIndividual IRI="#AcademicPerf_002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#currentGPA"/>
+        <NamedIndividual IRI="#AcademicPerf_003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#onSAPProbation"/>
+        <NamedIndividual IRI="#AcademicPerf_003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sessionsAttended"/>
+        <NamedIndividual IRI="#Advisory_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sessionsAttended"/>
+        <NamedIndividual IRI="#Advisory_002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sessionsAttended"/>
+        <NamedIndividual IRI="#Advisory_003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMissedClasses"/>
+        <NamedIndividual IRI="#Attend_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMissedClasses"/>
+        <NamedIndividual IRI="#Attend_002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMissedClasses"/>
+        <NamedIndividual IRI="#Attend_003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#outstandingBalance"/>
+        <NamedIndividual IRI="#Financial_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1500.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#outstandingBalance"/>
+        <NamedIndividual IRI="#Financial_002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">600.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#outstandingBalance"/>
+        <NamedIndividual IRI="#Financial_003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#loginsThisSemester"/>
+        <NamedIndividual IRI="#LMS_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#loginsThisSemester"/>
+        <NamedIndividual IRI="#LMS_003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#incidentCount"/>
+        <NamedIndividual IRI="#ResLife_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#incidentCount"/>
+        <NamedIndividual IRI="#ResLife_002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#incidentCount"/>
+        <NamedIndividual IRI="#ResLife_003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAcademicPerformance"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAdvisoryInteraction"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEngagement"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFinancialStatus"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLMSEngagement"/>
+        <Class IRI="#Engagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPhysicalAttendance"/>
+        <Class IRI="#Engagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasResidentialLife"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAcademicPerformance"/>
+        <Class IRI="#AcademicPerformance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAdvisoryInteraction"/>
+        <Class IRI="#AdvisoryInteraction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEngagement"/>
+        <Class IRI="#Engagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFinancialStatus"/>
+        <Class IRI="#FinancialStatus"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLMSEngagement"/>
+        <Class IRI="#Engagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLMSEngagement"/>
+        <Class IRI="#LMSEngagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPhysicalAttendance"/>
+        <Class IRI="#Engagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPhysicalAttendance"/>
+        <Class IRI="#PhysicalAttendance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasResidentialLife"/>
+        <Class IRI="#ResidentialLife"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#currentGPA"/>
+        <Class IRI="#AcademicPerformance"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMissedClasses"/>
+        <Class IRI="#Engagement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMissedClasses"/>
+        <Class IRI="#PhysicalAttendance"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRiskLevel"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#incidentCount"/>
+        <Class IRI="#ResidentialLife"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#loginsThisSemester"/>
+        <Class IRI="#Engagement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#loginsThisSemester"/>
+        <Class IRI="#LMSEngagement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mlRiskScore"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#onSAPProbation"/>
+        <Class IRI="#AcademicPerformance"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#outstandingBalance"/>
+        <Class IRI="#FinancialStatus"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#recommendedAction"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sessionsAttended"/>
+        <Class IRI="#AdvisoryInteraction"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#currentGPA"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMissedClasses"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRiskLevel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#incidentCount"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#loginsThisSemester"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mlRiskScore"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#onSAPProbation"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#outstandingBalance"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#recommendedAction"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sessionsAttended"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Medium Academic Risk</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Student"/>
+                <Variable IRI="/s"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasAcademicPerformance"/>
+                <Variable IRI="/s"/>
+                <Variable IRI="/ap"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#currentGPA"/>
+                <Variable IRI="/ap"/>
+                <Variable IRI="/gpa"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="/gpa"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.0</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="/gpa"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.5</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasRiskLevel"/>
+                <Variable IRI="/s"/>
+                <Literal>Medium</Literal>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#recommendedAction"/>
+                <Variable IRI="/s"/>
+                <Literal>Academic monitoring recommended</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>High Academic Risk</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Student"/>
+                <Variable IRI="/s"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasAcademicPerformance"/>
+                <Variable IRI="/s"/>
+                <Variable IRI="/ap"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#currentGPA"/>
+                <Variable IRI="/ap"/>
+                <Variable IRI="/gpa"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="/gpa"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.0</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasRiskLevel"/>
+                <Variable IRI="/s"/>
+                <Literal>High</Literal>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#recommendedAction"/>
+                <Variable IRI="/s"/>
+                <Literal>Urgent SAP review and academic advising</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Advising issue</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Student"/>
+                <Variable IRI="/s"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasAdvisoryInteraction"/>
+                <Variable IRI="/s"/>
+                <Variable IRI="/ai"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#sessionsAttended"/>
+                <Variable IRI="/ai"/>
+                <Variable IRI="/sess"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="/sess"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#recommendedAction"/>
+                <Variable IRI="/s"/>
+                <Literal>Schedule advising session if risk is high or medium if low not necessary</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Engagement canvas</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Student"/>
+                <Variable IRI="/s"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasEngagement"/>
+                <Variable IRI="/s"/>
+                <Variable IRI="/eng"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasLMSEngagement"/>
+                <Variable IRI="/eng"/>
+                <Variable IRI="/lms"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#loginsThisSemester"/>
+                <Variable IRI="/lms"/>
+                <Variable IRI="/log"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="/log"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#recommendedAction"/>
+                <Variable IRI="/s"/>
+                <Literal>Suggest increasing Canvas/LMS usage to improve engagement</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Engagement attendance</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasPhysicalAttendance"/>
+                <Variable IRI="/eng"/>
+                <Variable IRI="/att"/>
+            </ObjectPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="/miss"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+            </BuiltInAtom>
+            <ClassAtom>
+                <Class IRI="#Student"/>
+                <Variable IRI="/s"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasEngagement"/>
+                <Variable IRI="/s"/>
+                <Variable IRI="/eng"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasMissedClasses"/>
+                <Variable IRI="/att"/>
+                <Variable IRI="/miss"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#recommendedAction"/>
+                <Variable IRI="/s"/>
+                <Literal>Encourage better class attendance – high number of missed classes detected</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Medium Financial</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Student"/>
+                <Variable IRI="/s"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasFinancialStatus"/>
+                <Variable IRI="/s"/>
+                <Variable IRI="/fs"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#outstandingBalance"/>
+                <Variable IRI="/fs"/>
+                <Variable IRI="/bal"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="/bal"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="/bal"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1500</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasRiskLevel"/>
+                <Variable IRI="/s"/>
+                <Literal>Medium</Literal>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#recommendedAction"/>
+                <Variable IRI="/s"/>
+                <Literal>Review payment plan</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>High Financial</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Student"/>
+                <Variable IRI="/s"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasFinancialStatus"/>
+                <Variable IRI="/s"/>
+                <Variable IRI="/fs"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#outstandingBalance"/>
+                <Variable IRI="/fs"/>
+                <Variable IRI="/bal"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="/bal"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1500</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasRiskLevel"/>
+                <Variable IRI="/s"/>
+                <Literal>High</Literal>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#recommendedAction"/>
+                <Variable IRI="/s"/>
+                <Literal>Immediate financial aid consultation</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>High Residential Issue</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Student"/>
+                <Variable IRI="/s"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasResidentialLife"/>
+                <Variable IRI="/s"/>
+                <Variable IRI="/rl"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#incidentCount"/>
+                <Variable IRI="/rl"/>
+                <Variable IRI="/inc"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="/inc"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#recommendedAction"/>
+                <Variable IRI="/s"/>
+                <Literal>Residential life check-in suggested</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>low ml</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Student"/>
+                <Variable IRI="/s"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#mlRiskScore"/>
+                <Variable IRI="/s"/>
+                <Variable IRI="/score"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="/score"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.5</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="/score"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.8</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasRiskLevel"/>
+                <Variable IRI="/s"/>
+                <Literal>Medium</Literal>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#recommendedAction"/>
+                <Variable IRI="/s"/>
+                <Literal>ML model suggests monitoring</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>High ML</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Student"/>
+                <Variable IRI="/s"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#mlRiskScore"/>
+                <Variable IRI="/s"/>
+                <Variable IRI="/score"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="/score"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.8</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasRiskLevel"/>
+                <Variable IRI="/s"/>
+                <Literal>High</Literal>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#recommendedAction"/>
+                <Variable IRI="/s"/>
+                <Literal>ML model flags high risk – review all factors</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LMSEngagement</IRI>
+        <Literal>Optional engagement metric for departments without LMS usage.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#currentGPA</IRI>
+        <Literal>&quot;Current GPA of the student (e.g., 2.8)&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMissedClasses</IRI>
+        <Literal>Compulsory metric for all departments to enable risk prediction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#incidentCount</IRI>
+        <Literal>&quot;Number of residential life incidents&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#loginsThisSemester</IRI>
+        <Literal>&quot;Number of Canvas logins this semester&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#mlRiskScore</IRI>
+        <Literal>&quot;Risk probability from ML model (0.0 to 1.0)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#onSAPProbation</IRI>
+        <Literal>&quot;Whether the student is on academic probation&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#outstandingBalance</IRI>
+        <Literal>&quot;Amount of unpaid tuition&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sessionsAttended</IRI>
+        <Literal>&quot;Number of advising/counselling sessions attended&quot;</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
